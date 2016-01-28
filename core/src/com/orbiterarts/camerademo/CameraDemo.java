@@ -79,6 +79,8 @@ public class CameraDemo extends ApplicationAdapter implements InputProcessor{
             camera.translate(1f,0f);
         if(keycode == Input.Keys.ESCAPE)
             Gdx.app.log("Key Hit","Escape");
+        if(keycode == Input.Keys.SHIFT_LEFT||keycode==Input.Keys.SHIFT_RIGHT)
+            Gdx.app.log("Key Hit","One of the Shift Keys");
         return true;
     }
 
